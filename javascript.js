@@ -1,8 +1,13 @@
-var sportsQ = ["Sports1", "Sports2", "Sports3", "Sports4", "Sports5"]
-var animalsQ = ["Animals1", "Animals2", "Animals3", " Animals4", "Animals5"]
-var historyQ = ["History1", "History2", "History3", " History4", "History5"]
-var musicQ = ["Music1", "Music2", "Music3", "Music4 ", "Music5"]
-var uPennCodingQ = ["Coding1", "Coding2", "Coding3", "Coding4", "Coding5"]
+var sportsQ = ["Florida’s Streamline Hotel is the birthplace of this auto racing organization.", "The maximum number of players on a soccer team."
+, "The average lifespan of a baseball.", "The number of events in the 2020 Summer Olympics.", "Coach Pete Carroll’s gum of choice"]
+var animalsQ = ["Reaching speeds of 200 miles per hour, this bird of prey is not only the world’s fastest, it is also the world’s fastest animal", "The heart of a shrimp is located here.", "The material a rhinoceros’ horn is made of", " Erythrocytes are your red blood cells & these are your white blood cells.", "The percentage of ice in Antarctic glaciers is made of penguin urine."]
+var historyQ = ["On March 11, 2020, this was declared a pandemic.", "A French Queen famous for saying, “Let them eat cake!", "Operation Big Switch, involving the exchange of thousands of these people, was a key to the agreement ending the Korean War."
+, "In legend, this real European leader fielded an elite corps called the 12 Peers that included Oliver and Roland.", "Thomas Jackson earned the nickname “Stonewall” at First A: Bull Run, called this by the Rebs."
+]
+var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of siblings had its first No. 1 song with “Sucker”"
+, "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
+var uPennCodingQ = ["The three “languages” used to create websites", "Elements used as containers for inline elements", " A named location for a value that gets stored in the browser’s memory when a program is run", "Order of GitHub commands", "Best camp part."]
+
 var playerScore = 0
 
 var Sports1 = ["Sports 1 Answer 1", "Sports 1 Answer 2", "Sports 1 Answer 3", "Sports 1 Answer 4"]
