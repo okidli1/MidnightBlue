@@ -380,6 +380,8 @@ $(document).ready(function(){
        }
        else{
           player2Score -=200;
+       }
+      }
     });   
    }); 
 
