@@ -21,4 +21,5 @@
 
 body{
     background-image: url("brickWall.jpg");
+    background-size: cover;
 }

@@ -41,15 +41,26 @@ var Coding3 = ["What is a console?", "What is a string?", "What is a variable?",
 var Coding4 = ["Add, Push, Commit", "Add, Commit, Push", "Commit, Add, Push", "Push, Commit, Add"]
 var Coding5 = ["All of it", "None of it.", "Meeting new people", "The interactive instructors."]
 
+var turnCounter = 0;
 //Sport Buttons
 
 $(document).ready(function(){
     $(".btn-choiceSport1").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+       if(turnCounter % 2 == 0){
+         player1Score +=100;
+       }
+      else{
+         player2Score +=100
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=100;
+       }
+       else{
+          player2Score -=100;
+       }
        }
     });   
    });
@@ -57,44 +68,84 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceSport2").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=200;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=200;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport4").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
@@ -103,55 +154,105 @@ $(document).ready(function(){
 $(document).ready(function(){
  $(".btn-choiceAnimal1").on("click",function() {
  if($(this).val()== 1){
-    playerScore +=100;    
+   if(turnCounter % 2 == 0){
+      player1Score +=100;
+    }
+   else{
+      player2Score +=100
+   }    
  }
  else{
-     playerscore -=100;
+    if(turnCounter % 2 == 0){
+     player1score -=100;
     }
+    else{
+       player2Score -=100;
+    }
+   }
  });   
 });
 
 $(document).ready(function(){
     $(".btn-choiceAnimal2").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=200;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=200;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceAnimal3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceAnimal4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceAnimal5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
@@ -181,33 +282,63 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceHistory3").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceHistory4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceHistory5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
@@ -215,56 +346,108 @@ $(document).ready(function(){
 
    $(document).ready(function(){
     $(".btn-choiceMusic1").on("click",function() {
+
     if($(this).val()== 3){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=100;
+       }
+      else{
+         player2Score +=100
+      }    
+
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=100;
        }
+       else{
+          player2Score -=100;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic2").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=200;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=200;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    }); 
 
    $(document).ready(function(){
     $(".btn-choiceMusic3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
-    $(".btn-choiceMusic1").on("click",function() {
+    $(".btn-choiceMusic5").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
    
@@ -272,55 +455,105 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceCoding1").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=100;
+       }
+      else{
+         player2Score +=100
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=100;
        }
+       else{
+          player2Score -=100;
+       }
+      }
     });   
    }); 
 
    $(document).ready(function(){
     $(".btn-choiceMusic2").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=200;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=200;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic3").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic4").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic5").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
