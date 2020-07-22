@@ -8,37 +8,38 @@ var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of sibl
 , "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
 var uPennCodingQ = ["The three “languages” used to create websites", "Elements used as containers for inline elements", " A named location for a value that gets stored in the browser’s memory when a program is run", "Order of GitHub commands", "Best camp part."]
 
-var playerScore = 0
+var player1Score = 0
+var player2Score = 0
 
-var Sports1 = ["Sports 1 Answer 1", "Sports 1 Answer 2", "What is NASCAR?", "Sports 1 Answer 4"]
-var Sports2 = ["What is eleven?", "Sports 2 Answer 2", "Sports 2 Answer 3", "Sports 2 Answer 4"]
-var Sports3 = ["Sports 3 Answer 1", "What is 7 pitches?", "Sports 3 Answer 3", "Sports 3 Answer 4"]
-var Sports4 = ["Sports 4 Answer 1", "Sports 4 Answer 2", "Sports 4 Answer 3", "What is 339?"]
-var Sports5 = ["Sports 5 Answer 1", "Sports 5 Answer 2", "Sports 5 Answer 3", "What is Bubble Yum?"]
+var Sports1 = ["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"]
+var Sports2 = ["What is eleven?", "What is 50?", "What is one?", "What is 30?"]
+var Sports3 = ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"]
+var Sports4 = ["What is 279?", "What is 436?", "What is 327?", "What is 339?"]
+var Sports5 = ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]
 
-var Animals1 = ["Animals What is the peregrine falcon?", "Animals 1 Answer 2", "Animals 1 Answer 3", "Animals 1 Answer 4"]
-var Animals2 = ["Animals 2 Answer 1", "Animals 2 Answer 2", "What is its head?", "Animals 2 Answer 4"]
-var Animals3 = ["Animals 3 Answer 1", "What is hair?", "Animals 3 Answer 3", "Animals 3 Answer 4"]
-var Animals4 = ["What are leukocytes?", "Animals 4 Answer 2", "Animals 4 Answer 3", "Animals 4 Answer 4"]
-var Animals5 = ["Animals 5 Answer 1", "Animals 5 Answer 2", "Animals 5 Answer 3", "What is nearly three percent?"]
+var Animals1 = ["Animals What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"]
+var Animals2 = ["What is its abdomen?", "AWhat is its cephalothorax?", "What is its head?", "What is its antenna?"]
+var Animals3 = ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"]
+var Animals4 = ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"]
+var Animals5 = ["What is 100%?", "What is nearly 2%?","What is nearly 6%?", "What is nearly three percent?"]
 
-var History1 = ["History 1 Answer 1", "What is COVID-19?", "History 1 Answer 3", "History 1 Answer 4"]
-var History2 = ["History 2 Answer 1", "History 2 Answer 2", "History 2 Answer 3", "Who is Marie Antoinette?"]
-var History3 = ["History 3 Answer 1", "History 3 Answer 2", "What are prisoners of war?", "History 3 Answer 4"]
-var History4 = ["Who is Charlemagne?", "History 4 Answer 2", "History 4 Answer 3", "History 4 Answer 4"]
-var History5 = ["History 5 Answer 1", "History 5 Answer 2", "History 5 Answer 3", "What is Manassas?"]
+var History1 = ["What is influenza?", "What is COVID-19?", "What is HIV/AIDS", "What is the flu?"]
+var History2 = ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"]
+var History3 = ["What are weapons of war?", "HWhat are boy bands?", "What are prisoners of war?", "What are soldiers?"]
+var History4 = ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"]
+var History5 = ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]
 
-var Music1 = ["Music 1 Answer 1", "Music 1 Answer 2", "Music 1 Answer 3", "What is the piano?"]
-var Music2 = ["Music 2 Answer 1", "Music 2 Answer 2", "Music 2 Answer 3", "Who are the Jonas Brothers?"]
-var Music3 = ["Music 3 Answer 1", "Who is John Legend?", "Music 3 Answer 3", "Music 3 Answer 4"]
-var Music4 = ["Who is Lizzo?", "Music 4 Answer 2", "Music 4 Answer 3", "Music 4 Answer 4"]
-var Music5 = ["Music 5 Answer 1", "What is Florida Georgia Line?", "Music 5 Answer 3", "Music 5 Answer 4"]
+var Music1 = ["What is the tambourine?", "What is the guitar?", "What is the piano?", "What are the drums?"]
+var Music2 = ["What are the Beatles?", "What are the Doobie Brothers?", "What is NSYNC?", "Who are the Jonas Brothers?"]
+var Music3 = ["Who is Marvin Gaye?", "Who is John Legend?", "Who is Stevie Wonder?", "Who is Smokey Robinson"]
+var Music4 = ["Who is Lizzo?", "Who is Akala?", "Who is Yubin?", "Who is Kelis?"]
+var Music5 = ["What is Florida Arizona Line?", "What is Florida Georgia Line?", " What is Texas Louisiana Line?", "What is Maine California Line?"]
 
-var Coding1 = ["Coding 1 Answer 1", "Coding 1 Answer 2", "What is HTML, JavaScript, and CSS?", "Coding 1 Answer 4"]
-var Coding2 = ["What are Block Elements?", "Coding 2 Answer 2", "Coding 2 Answer 3", "Coding 2 Answer 4"]
-var Coding3 = ["Coding 3 Answer 1", "Coding 3 Answer 2", "What is a variable?", "Coding 3 Answer 4"]
-var Coding4 = ["Coding 4 Answer 1", "Add, Commit, Push", "Coding 4 Answer 4", "Coding 4 Answer 4"]
-var Coding5 = ["All of it", "Coding 5 Answer 2", "Coding 5 Answer 3", "Coding 5 Answer 4"]
+var Coding1 = ["What is Bootstrap, HTML, and CSS?", "What is jQuery, JavaScript, and Bootstrap?", "What is HTML, JavaScript, and CSS?", "What is HTML, CSS, and Chinese?"]
+var Coding2 = ["What are Block Elements?", "What are Input Elements?", "What are Output Elements?", "What are Looping Elements?"]
+var Coding3 = ["What is a console?", "What is a string?", "What is a variable?", "What is an integer?"]
+var Coding4 = ["Add, Push, Commit", "Add, Commit, Push", "Commit, Add, Push", "Push, Commit, Add"]
+var Coding5 = ["All of it", "None of it.", "Meeting new people", "The interactive instructors."]
 
 //Sport Buttons
 
@@ -214,7 +215,7 @@ $(document).ready(function(){
 
    $(document).ready(function(){
     $(".btn-choiceMusic1").on("click",function() {
-    if($(this).val()== 4){
+    if($(this).val()== 3){
        playerScore +=100;    
     }
     else{
@@ -322,3 +323,4 @@ $(document).ready(function(){
        }
     });   
    });
+
