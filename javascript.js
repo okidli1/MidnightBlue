@@ -40,15 +40,26 @@ var Coding3 = ["Coding 3 Answer 1", "Coding 3 Answer 2", "What is a variable?", 
 var Coding4 = ["Coding 4 Answer 1", "Add, Commit, Push", "Coding 4 Answer 4", "Coding 4 Answer 4"]
 var Coding5 = ["All of it", "Coding 5 Answer 2", "Coding 5 Answer 3", "Coding 5 Answer 4"]
 
+var turnCounter = 0;
 //Sport Buttons
 
 $(document).ready(function(){
     $(".btn-choiceSport1").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+       if(turnCounter % 2 == 0){
+         player1Score +=100;
+       }
+      else{
+         player2Score +=100
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=100;
+       }
+       else{
+          player2Score -=100;
+       }
        }
     });   
    });
@@ -56,44 +67,84 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceSport2").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=200;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=200;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=300;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=300;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport4").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=400;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=400;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=500;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=500;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
