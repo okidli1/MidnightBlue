@@ -8,8 +8,9 @@ var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of sibl
 , "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
 var uPennCodingQ = ["The three “languages” used to create websites", "Elements used as containers for inline elements", " A named location for a value that gets stored in the browser’s memory when a program is run", "Order of GitHub commands", "Best camp part."]
 
-var player1Score = 0
-var player2Score = 0
+var player1Score = 0;
+var player2Score = 0;
+
 
 var Sports1 = ["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"]
 var Sports2 = ["What is eleven?", "What is 50?", "What is one?", "What is 30?"]
@@ -49,6 +50,7 @@ $(document).ready(function(){
     if($(this).val()== 3){
        if(turnCounter % 2 == 0){
          player1Score +=100;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=100
@@ -57,6 +59,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=100;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=100;
@@ -70,6 +73,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=200;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=200
@@ -78,6 +82,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=200;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=200;
@@ -91,6 +96,7 @@ $(document).ready(function(){
     if($(this).val()== 2){
       if(turnCounter % 2 == 0){
          player1Score +=300;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=300
@@ -99,6 +105,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=300;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=300;
@@ -112,6 +119,7 @@ $(document).ready(function(){
     if($(this).val()== 4){
       if(turnCounter % 2 == 0){
          player1Score +=400;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=400
@@ -120,6 +128,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=400;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=400;
@@ -133,6 +142,7 @@ $(document).ready(function(){
     if($(this).val()== 4){
       if(turnCounter % 2 == 0){
          player1Score +=500;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=500
@@ -141,6 +151,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=500;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=500;
@@ -156,6 +167,7 @@ $(document).ready(function(){
  if($(this).val()== 1){
    if(turnCounter % 2 == 0){
       player1Score +=100;
+      $(".p1Score").text(player1Score);
     }
    else{
       player2Score +=100
@@ -164,6 +176,7 @@ $(document).ready(function(){
  else{
     if(turnCounter % 2 == 0){
      player1score -=100;
+     $(".p1Score").text(player1Score);
     }
     else{
        player2Score -=100;
@@ -177,6 +190,7 @@ $(document).ready(function(){
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=200;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=200
@@ -185,6 +199,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=200;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=200;
@@ -198,6 +213,7 @@ $(document).ready(function(){
     if($(this).val()== 2){
       if(turnCounter % 2 == 0){
          player1Score +=300;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=300
@@ -206,6 +222,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=300;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=300;
@@ -219,6 +236,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=400;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=400
@@ -227,6 +245,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=400;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=400;
@@ -240,6 +259,7 @@ $(document).ready(function(){
     if($(this).val()== 4){
       if(turnCounter % 2 == 0){
          player1Score +=500;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=500
@@ -248,6 +268,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=500;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=500;
@@ -284,6 +305,7 @@ $(document).ready(function(){
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=300;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=300
@@ -292,6 +314,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=300;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=300;
@@ -305,6 +328,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=400;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=400
@@ -313,6 +337,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=400;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=400;
@@ -326,6 +351,7 @@ $(document).ready(function(){
     if($(this).val()== 4){
       if(turnCounter % 2 == 0){
          player1Score +=500;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=500
@@ -334,6 +360,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=500;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=500;
@@ -346,13 +373,11 @@ $(document).ready(function(){
 
    $(document).ready(function(){
     $(".btn-choiceMusic1").on("click",function() {
-<<<<<<< HEAD
-=======
 
->>>>>>> 9ae4d88a06a963f2a8a823c9ec1c20fa4011da8c
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=100;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=100
@@ -362,6 +387,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=100;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=100;
@@ -375,6 +401,7 @@ $(document).ready(function(){
     if($(this).val()== 4){
       if(turnCounter % 2 == 0){
          player1Score +=200;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=200
@@ -383,6 +410,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=200;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=200;
@@ -396,6 +424,7 @@ $(document).ready(function(){
     if($(this).val()== 2){
       if(turnCounter % 2 == 0){
          player1Score +=300;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=300
@@ -404,6 +433,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=300;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=300;
@@ -417,6 +447,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=400;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=400
@@ -425,6 +456,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=400;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=400;
@@ -438,6 +470,7 @@ $(document).ready(function(){
     if($(this).val()== 2){
       if(turnCounter % 2 == 0){
          player1Score +=500;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=500
@@ -446,6 +479,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=500;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=500;
@@ -460,6 +494,7 @@ $(document).ready(function(){
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=100;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=100
@@ -468,6 +503,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=100;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=100;
@@ -481,6 +517,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=200;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=200
@@ -489,6 +526,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=200;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=200;
@@ -502,6 +540,7 @@ $(document).ready(function(){
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=300;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=300
@@ -510,6 +549,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=300;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=300;
@@ -523,6 +563,7 @@ $(document).ready(function(){
     if($(this).val()== 2){
       if(turnCounter % 2 == 0){
          player1Score +=400;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=400
@@ -531,6 +572,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=400;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=400;
@@ -544,6 +586,7 @@ $(document).ready(function(){
     if($(this).val()== 1){
       if(turnCounter % 2 == 0){
          player1Score +=500;
+         $(".p1Score").text(player1Score);
        }
       else{
          player2Score +=500
@@ -552,6 +595,7 @@ $(document).ready(function(){
     else{
        if(turnCounter % 2 == 0){
         player1score -=500;
+        $(".p1Score").text(player1Score);
        }
        else{
           player2Score -=500;
@@ -560,3 +604,6 @@ $(document).ready(function(){
     });   
    });
 
+
+
+    
