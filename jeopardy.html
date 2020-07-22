@@ -8,23 +8,34 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
     <title>Jeopardy</title>
   </head>
   <body>
     <div class="container">
-        <div class="row">
-          <div class="col-4" style="border: 3px black solid; height: 50px;  text-align: center;">
-            <a href="">About Page</a>
-          </div>
-          <div class="col-8" style="border: 3px black solid; height: 50px; text-align: center;">
-            This is Jeopardy
-          </div>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Trivia Night</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>   
+        <!-- End Nav -->
         <div class="row">
             <div class="col-1">
 
             </div>
             <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                Catagory 1
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -39,8 +50,10 @@
                           ...
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Answer 4</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Answer 3</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Answer 2</button>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Answer 1</button>
                         </div>
                       </div>
                     </div>
@@ -49,47 +62,47 @@
  
             </div>
             <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px">
-
+                Catagory 2
             </div>
             <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                Catagory 3 
+            </div>
+            <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                Catagory 4
+            </div>
+            <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                Catagory 5
+            </div>
+            <div class="col-1">
                 
             </div>
-            <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-               
-            </div>
-            <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                
-            </div>
-            <div class="col-1">
-
-            </div>
         </div>
         <div class="row">
             <div class="col-1">
 
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="100_animals">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="100_animals" >
                     $100
                 </button>    
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="100_sports">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="100_sports"> 
                     $100
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="100_music">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="100_music">
+                     $100
+                </button>
+            </div>
+            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="100_history" >
                     $100
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="100_history">
-                    $100
-                </button>
-            </div>
-            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="100_coding">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="100_coding"> 
                     $100
                 </button>
             </div>
@@ -102,27 +115,27 @@
 
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="200_animals">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="200_animals" >
                     $200
                 </button>    
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="200_sports">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="200_sports"> 
                     $200
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="200_music">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="200_music">
+                     $200
+                </button>
+            </div>
+            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="200_history" >
                     $200
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="200_history">
-                    $200
-                </button>
-            </div>
-            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="200_coding">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="200_coding"> 
                     $200
                 </button>
             </div>
@@ -135,27 +148,27 @@
 
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="300_animals">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="300_animals" >
                     $300
                 </button>    
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="300_sports">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="300_sports"> 
                     $300
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="300_music">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="300_music">
+                     $300
+                </button>
+            </div>
+            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="300_history" >
                     $300
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="300_history">
-                    $300
-                </button>
-            </div>
-            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="300_coding">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="300_coding"> 
                     $300
                 </button>
             </div>
@@ -168,27 +181,27 @@
 
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="400_animals">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="400_animals" >
                     $400
                 </button>    
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="400_sports">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="400_sports"> 
                     $400
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="400_music">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="400_music">
+                     $400
+                </button>
+            </div>
+            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="400_history" >
                     $400
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="400_history">
-                    $400
-                </button>
-            </div>
-            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="400_coding">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="400_coding"> 
                     $400
                 </button>
             </div>
@@ -201,27 +214,27 @@
 
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="500_animals">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="500_animals" >
                     $500
                 </button>    
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="500_sports">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="500_sports"> 
                     $500
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="500_music">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="500_music">
+                     $500
+                </button>
+            </div>
+            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="500_history" >
                     $500
                 </button>
             </div>
             <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="500_history">
-                    $500
-                </button>
-            </div>
-            <div class="col-2" style="color:yellow; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 65px;">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="500_coding">
+                <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: midnightblue !important;" id="500_coding"> 
                     $500
                 </button>
             </div>
