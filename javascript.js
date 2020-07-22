@@ -10,45 +10,56 @@ var uPennCodingQ = ["The three “languages” used to create websites", "Elemen
 
 var playerScore = 0
 
-var Sports1 = ["Sports 1 Answer 1", "Sports 1 Answer 2", "Sports 1 Answer 3", "Sports 1 Answer 4"]
-var Sports2 = ["Sports 2 Answer 1", "Sports 2 Answer 2", "Sports 2 Answer 3", "Sports 2 Answer 4"]
-var Sports3 = ["Sports 3 Answer 1", "Sports 3 Answer 2", "Sports 3 Answer 3", "Sports 3 Answer 4"]
-var Sports4 = ["Sports 4 Answer 1", "Sports 4 Answer 2", "Sports 4 Answer 3", "Sports 4 Answer 4"]
-var Sports5 = ["Sports 5 Answer 1", "Sports 5 Answer 2", "Sports 5 Answer 3", "Sports 5 Answer 4"]
+var Sports1 = ["Sports 1 Answer 1", "Sports 1 Answer 2", "What is NASCAR?", "Sports 1 Answer 4"]
+var Sports2 = ["What is eleven?", "Sports 2 Answer 2", "Sports 2 Answer 3", "Sports 2 Answer 4"]
+var Sports3 = ["Sports 3 Answer 1", "What is 7 pitches?", "Sports 3 Answer 3", "Sports 3 Answer 4"]
+var Sports4 = ["Sports 4 Answer 1", "Sports 4 Answer 2", "Sports 4 Answer 3", "What is 339?"]
+var Sports5 = ["Sports 5 Answer 1", "Sports 5 Answer 2", "Sports 5 Answer 3", "What is Bubble Yum?"]
 
-var Animals1 = ["Animals 1 Answer 1", "Animals 1 Answer 2", "Animals 1 Answer 3", "Animals 1 Answer 4"]
-var Animals2 = ["Animals 2 Answer 1", "Animals 2 Answer 2", "Animals 2 Answer 3", "Animals 2 Answer 4"]
-var Animals3 = ["Animals 3 Answer 1", "Animals 3 Answer 2", "Animals 3 Answer 3", "Animals 3 Answer 4"]
-var Animals4 = ["Animals 4 Answer 1", "Animals 4 Answer 2", "Animals 4 Answer 3", "Animals 4 Answer 4"]
-var Animals5 = ["Animals 5 Answer 1", "Animals 5 Answer 2", "Animals 5 Answer 3", "Animals 5 Answer 4"]
+var Animals1 = ["Animals What is the peregrine falcon?", "Animals 1 Answer 2", "Animals 1 Answer 3", "Animals 1 Answer 4"]
+var Animals2 = ["Animals 2 Answer 1", "Animals 2 Answer 2", "What is its head?", "Animals 2 Answer 4"]
+var Animals3 = ["Animals 3 Answer 1", "What is hair?", "Animals 3 Answer 3", "Animals 3 Answer 4"]
+var Animals4 = ["What are leukocytes?", "Animals 4 Answer 2", "Animals 4 Answer 3", "Animals 4 Answer 4"]
+var Animals5 = ["Animals 5 Answer 1", "Animals 5 Answer 2", "Animals 5 Answer 3", "What is nearly three percent?"]
 
-var History1 = ["History 1 Answer 1", "History 1 Answer 2", "History 1 Answer 3", "History 1 Answer 4"]
-var History2 = ["History 2 Answer 1", "History 2 Answer 2", "History 2 Answer 3", "History 2 Answer 4"]
-var History3 = ["History 3 Answer 1", "History 3 Answer 2", "History 3 Answer 3", "History 3 Answer 4"]
-var History4 = ["History 4 Answer 1", "History 4 Answer 2", "History 4 Answer 3", "History 4 Answer 4"]
-var History5 = ["History 5 Answer 1", "History 5 Answer 2", "History 5 Answer 3", "History 5 Answer 4"]
+var History1 = ["History 1 Answer 1", "What is COVID-19?", "History 1 Answer 3", "History 1 Answer 4"]
+var History2 = ["History 2 Answer 1", "History 2 Answer 2", "History 2 Answer 3", "Who is Marie Antoinette?"]
+var History3 = ["History 3 Answer 1", "History 3 Answer 2", "What are prisoners of war?", "History 3 Answer 4"]
+var History4 = ["Who is Charlemagne?", "History 4 Answer 2", "History 4 Answer 3", "History 4 Answer 4"]
+var History5 = ["History 5 Answer 1", "History 5 Answer 2", "History 5 Answer 3", "What is Manassas?"]
 
-var Music1 = ["Music 1 Answer 1", "Music 1 Answer 2", "Music 1 Answer 3", "Music 1 Answer 4"]
-var Music2 = ["Music 2 Answer 1", "Music 2 Answer 2", "Music 2 Answer 3", "Music 2 Answer 4"]
-var Music3 = ["Music 3 Answer 1", "Music 3 Answer 3", "Music 3 Answer 3", "Music 3 Answer 4"]
-var Music4 = ["Music 4 Answer 1", "Music 4 Answer 2", "Music 4 Answer 3", "Music 4 Answer 4"]
-var Music5 = ["Music 5 Answer 1", "Music 5 Answer 2", "Music 5 Answer 3", "Music 5 Answer 4"]
+var Music1 = ["Music 1 Answer 1", "Music 1 Answer 2", "Music 1 Answer 3", "What is the piano?"]
+var Music2 = ["Music 2 Answer 1", "Music 2 Answer 2", "Music 2 Answer 3", "Who are the Jonas Brothers?"]
+var Music3 = ["Music 3 Answer 1", "Who is John Legend?", "Music 3 Answer 3", "Music 3 Answer 4"]
+var Music4 = ["Who is Lizzo?", "Music 4 Answer 2", "Music 4 Answer 3", "Music 4 Answer 4"]
+var Music5 = ["Music 5 Answer 1", "What is Florida Georgia Line?", "Music 5 Answer 3", "Music 5 Answer 4"]
 
-var Coding1 = ["Coding 1 Answer 1", "Coding 1 Answer 2", "Coding 1 Answer 3", "Coding 1 Answer 4"]
-var Coding2 = ["Coding 2 Answer 4", "Coding 2 Answer 2", "Coding 2 Answer 3", "Coding 2 Answer 4"]
-var Coding3 = ["Coding 3 Answer 1", "Coding 3 Answer 2", "Coding 3 Answer 3", "Coding 3 Answer 4"]
-var Coding4 = ["Coding 4 Answer 1", "Coding 4 Answer 2", "Coding 4 Answer 4", "Coding 4 Answer 4"]
-var Coding5 = ["Coding 5 Answer 1", "Coding 5 Answer 2", "Coding 5 Answer 3", "Coding 5 Answer 4"]
+var Coding1 = ["Coding 1 Answer 1", "Coding 1 Answer 2", "What is HTML, JavaScript, and CSS?", "Coding 1 Answer 4"]
+var Coding2 = ["What are Block Elements?", "Coding 2 Answer 2", "Coding 2 Answer 3", "Coding 2 Answer 4"]
+var Coding3 = ["Coding 3 Answer 1", "Coding 3 Answer 2", "What is a variable?", "Coding 3 Answer 4"]
+var Coding4 = ["Coding 4 Answer 1", "Add, Commit, Push", "Coding 4 Answer 4", "Coding 4 Answer 4"]
+var Coding5 = ["All of it", "Coding 5 Answer 2", "Coding 5 Answer 3", "Coding 5 Answer 4"]
 
+var turnCounter = 0;
 //Sport Buttons
 
 $(document).ready(function(){
     $(".btn-choiceSport1").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+       if(turnCounter % 2 == 0){
+         player1Score +=100;
+       }
+      else{
+         player2Score +=100
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=100;
+       }
+       else{
+          player2Score -=100;
+       }
        }
     });   
    });
@@ -56,44 +67,84 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceSport2").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=200;
+       }
+      else{
+         player2Score +=200
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=200;
        }
+       else{
+          player2Score -=200;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=300;
+       }
+      else{
+         player2Score +=300
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=300;
        }
+       else{
+          player2Score -=300;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport4").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=400;
+       }
+      else{
+         player2Score +=400
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=400;
        }
+       else{
+          player2Score -=400;
+       }
+      }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceSport5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+      if(turnCounter % 2 == 0){
+         player1Score +=500;
+       }
+      else{
+         player2Score +=500
+      }    
     }
     else{
-        playerscore -=100;
+       if(turnCounter % 2 == 0){
+        player1score -=500;
        }
+       else{
+          player2Score -=500;
+       }
+      }
     });   
    });
 
@@ -113,10 +164,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".btn-choiceAnimal2").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+       playerScore +=200;    
     }
     else{
-        playerscore -=100;
+        playerscore -=200;
        }
     });   
    });
@@ -124,10 +175,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceAnimal3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=100;    
+       playerScore +=300;    
     }
     else{
-        playerscore -=100;
+        playerscore -=300;
        }
     });   
    });
@@ -135,10 +186,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceAnimal4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=100;    
+       playerScore +=400;    
     }
     else{
-        playerscore -=100;
+        playerscore -=400;
        }
     });   
    });
@@ -146,10 +197,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceAnimal5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+       playerScore +=500;    
     }
     else{
-        playerscore -=100;
+        playerscore -=500;
        }
     });   
    });
@@ -169,10 +220,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceHistory2").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+       playerScore +=200;    
     }
     else{
-        playerscore -=100;
+        playerscore -=200;
        }
     });   
    });
@@ -180,10 +231,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceHistory3").on("click",function() {
     if($(this).val()== 3){
-       playerScore +=100;    
+       playerScore +=300;    
     }
     else{
-        playerscore -=100;
+        playerscore -=300;
        }
     });   
    });
@@ -191,10 +242,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceHistory4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=100;    
+       playerScore +=400;    
     }
     else{
-        playerscore -=100;
+        playerscore -=400;
        }
     });   
    });
@@ -202,10 +253,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceHistory5").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+       playerScore +=500;    
     }
     else{
-        playerscore -=100;
+        playerscore -=500;
        }
     });   
    });
@@ -226,10 +277,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceMusic2").on("click",function() {
     if($(this).val()== 4){
-       playerScore +=100;    
+       playerScore +=200;    
     }
     else{
-        playerscore -=100;
+        playerscore -=200;
        }
     });   
    }); 
@@ -237,10 +288,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceMusic3").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=100;    
+       playerScore +=300;    
     }
     else{
-        playerscore -=100;
+        playerscore -=300;
        }
     });   
    });
@@ -248,10 +299,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceMusic4").on("click",function() {
     if($(this).val()== 1){
-       playerScore +=100;    
+       playerScore +=400;    
     }
     else{
-        playerscore -=100;
+        playerscore -=400;
        }
     });   
    });
@@ -259,10 +310,10 @@ $(document).ready(function(){
    $(document).ready(function(){
     $(".btn-choiceMusic1").on("click",function() {
     if($(this).val()== 2){
-       playerScore +=100;    
+       playerScore +=500;    
     }
     else{
-        playerscore -=100;
+        playerscore -=500;
        }
     });   
    });
@@ -281,44 +332,44 @@ $(document).ready(function(){
 
    $(document).ready(function(){
     $(".btn-choiceMusic2").on("click",function() {
-    if($(this).val()== 2){
-       playerScore +=100;    
+    if($(this).val()== 1){
+       playerScore +=200;    
     }
     else{
-        playerscore -=100;
+        playerscore -=200;
        }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic3").on("click",function() {
-    if($(this).val()== 1){
-       playerScore +=100;    
+    if($(this).val()== 3){
+       playerScore +=300;    
     }
     else{
-        playerscore -=100;
+        playerscore -=300;
        }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic4").on("click",function() {
-    if($(this).val()== 4){
-       playerScore +=100;    
+    if($(this).val()== 2){
+       playerScore +=400;    
     }
     else{
-        playerscore -=100;
+        playerscore -=400;
        }
     });   
    });
 
    $(document).ready(function(){
     $(".btn-choiceMusic5").on("click",function() {
-    if($(this).val()== 3){
-       playerScore +=100;    
+    if($(this).val()== 1){
+       playerScore +=500;    
     }
     else{
-        playerscore -=100;
+        playerscore -=500;
        }
     });   
    });

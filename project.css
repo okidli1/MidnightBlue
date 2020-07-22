@@ -1,5 +1,6 @@
 .introTxt{
     text-align: center;
+    color: white;
 }
 
 
@@ -16,4 +17,9 @@
     position: absolute;
     top: 60%;
     left: 44%;
+}
+
+body{
+    background-image: url("brickWall.jpg");
+    background-size: cover;
 }
