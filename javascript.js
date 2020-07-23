@@ -88,11 +88,13 @@ $(document).ready(function(){
             if(turnCounter % 2 == 0){
                player1Score += Number(document.getElementById("ModalLabel").textContent);
                $(".p1Score").text(player1Score);
+               turnCounter++;
               
             }
             else{
                player2Score += Number(document.getElementById("ModalLabel").textContent);
                $(".p2Score").text(player2Score);
+               turnCounter++;
               
             }
             correctGuess = true;
@@ -103,14 +105,13 @@ $(document).ready(function(){
          if(turnCounter % 2 == 0){
             player1Score -= Number(document.getElementById("ModalLabel").textContent);
             $(".p1Score").text(player1Score);
-           
+            turnCounter++
          }
          else{
             player2Score -= Number(document.getElementById("ModalLabel").textContent);
             $(".p2Score").text(player2Score);
-            
+            turnCounter++
       }
-      turnCounter++;
 
    }
    });
