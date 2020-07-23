@@ -21,6 +21,21 @@ var a1 = ""
 var a2 = ""
 var a3 = ""
 var a4 = ""
+var buttons = document.getElementsByClassName("btn btn-primary btn-lg btn-block");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", setTimerFunction, false);
+        }
+        function setTimerFunction(){
+            var timer = setTimeout(buzzer, 15000);
+        };
+        function buzzer() {
+            var modal = $("#exampleModal");
+            if (modal.hasClass("show")) {
+                modal.removeClass("show");
+                alert("Time has run out!");
+            }
+
+        }
 $(".btn-block").on("click", function () {
       var button = this.id;
       var number = parseInt(button[0])
