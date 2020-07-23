@@ -379,7 +379,6 @@ $(document).ready(function(){
 
    $(document).ready(function(){
     $(".btn-choiceMusic1").on("click",function() {
-
     if($(this).val()== 3){
       if(turnCounter % 2 == 0){
          player1Score +=100;
