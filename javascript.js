@@ -1,45 +1,78 @@
-var sportsQ = ["Florida’s Streamline Hotel is the birthplace of this auto racing organization.", "The maximum number of players on a soccer team."
-, "The average lifespan of a baseball.", "The number of events in the 2020 Summer Olympics.", "Coach Pete Carroll’s gum of choice"]
+$(document).ready(function () {
+var sportsQ = ["Florida’s Streamline Hotel is the birthplace of this auto racing organization.", "The maximum number of players on a soccer team.", "The average lifespan of a baseball.", "The number of events in the 2020 Summer Olympics.", "Coach Pete Carroll’s gum of choice"]
 var animalsQ = ["Reaching speeds of 200 miles per hour, this bird of prey is not only the world’s fastest, it is also the world’s fastest animal", "The heart of a shrimp is located here.", "The material a rhinoceros’ horn is made of", " Erythrocytes are your red blood cells & these are your white blood cells.", "The percentage of ice in Antarctic glaciers is made of penguin urine."]
-var historyQ = ["On March 11, 2020, this was declared a pandemic.", "A French Queen famous for saying, “Let them eat cake!", "Operation Big Switch, involving the exchange of thousands of these people, was a key to the agreement ending the Korean War."
-, "In legend, this real European leader fielded an elite corps called the 12 Peers that included Oliver and Roland.", "Thomas Jackson earned the nickname “Stonewall” at First A: Bull Run, called this by the Rebs."
-]
-var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of siblings had its first No. 1 song with “Sucker”"
-, "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
+var historyQ = ["On March 11, 2020, this was declared a pandemic.", "A French Queen famous for saying, “Let them eat cake!", "Operation Big Switch, involving the exchange of thousands of these people, was a key to the agreement ending the Korean War.", "In legend, this real European leader fielded an elite corps called the 12 Peers that included Oliver and Roland.", "Thomas Jackson earned the nickname “Stonewall” at First A: Bull Run, called this by the Rebs."]
+var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of siblings had its first No. 1 song with “Sucker”", "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
 var uPennCodingQ = ["The three “languages” used to create websites", "Elements used as containers for inline elements", " A named location for a value that gets stored in the browser’s memory when a program is run", "Order of GitHub commands", "Best camp part."]
 
-var player1Score = 0
-var player2Score = 0
+var SportsAnswers = [["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"], ["What is eleven?", "What is 50?", "What is one?", "What is 30?"], ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"], ["What is 279?", "What is 436?", "What is 327?", "What is 339?"], ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]]
 
-var Sports1 = ["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"]
-var Sports2 = ["What is eleven?", "What is 50?", "What is one?", "What is 30?"]
-var Sports3 = ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"]
-var Sports4 = ["What is 279?", "What is 436?", "What is 327?", "What is 339?"]
-var Sports5 = ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]
+var AnimalsAnswers = [["Animals What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"], ["What is its abdomen?", "What is its cephalothorax?", "What is its head?", "What is its antenna?"], ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"], ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"], ["What is 100%?", "What is nearly 2%?", "What is nearly 6%?", "What is nearly three percent?"]]
 
-var Animals1 = ["Animals What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"]
-var Animals2 = ["What is its abdomen?", "AWhat is its cephalothorax?", "What is its head?", "What is its antenna?"]
-var Animals3 = ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"]
-var Animals4 = ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"]
-var Animals5 = ["What is 100%?", "What is nearly 2%?","What is nearly 6%?", "What is nearly three percent?"]
+var HistoryAnswers = [["What is influenza?", "What is COVID-19?", "What is HIV/AIDS", "What is the flu?"], ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"], ["What are weapons of war?", "HWhat are boy bands?", "What are prisoners of war?", "What are soldiers?"], ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"], ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]]
 
-var History1 = ["What is influenza?", "What is COVID-19?", "What is HIV/AIDS", "What is the flu?"]
-var History2 = ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"]
-var History3 = ["What are weapons of war?", "HWhat are boy bands?", "What are prisoners of war?", "What are soldiers?"]
-var History4 = ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"]
-var History5 = ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]
+var MusicAnswers = [["What is the tambourine?", "What is the guitar?", "What is the piano?", "What are the drums?"], ["What are the Beatles?", "What are the Doobie Brothers?", "What is NSYNC?", "Who are the Jonas Brothers?"], ["Who is Marvin Gaye?", "Who is John Legend?", "Who is Stevie Wonder?", "Who is Smokey Robinson"], ["Who is Lizzo?", "Who is Akala?", "Who is Yubin?", "Who is Kelis?"], ["What is Florida Arizona Line?", "What is Florida Georgia Line?", " What is Texas Louisiana Line?", "What is Maine California Line?"]]
 
-var Music1 = ["What is the tambourine?", "What is the guitar?", "What is the piano?", "What are the drums?"]
-var Music2 = ["What are the Beatles?", "What are the Doobie Brothers?", "What is NSYNC?", "Who are the Jonas Brothers?"]
-var Music3 = ["Who is Marvin Gaye?", "Who is John Legend?", "Who is Stevie Wonder?", "Who is Smokey Robinson"]
-var Music4 = ["Who is Lizzo?", "Who is Akala?", "Who is Yubin?", "Who is Kelis?"]
-var Music5 = ["What is Florida Arizona Line?", "What is Florida Georgia Line?", " What is Texas Louisiana Line?", "What is Maine California Line?"]
+var CodingAnswers = [["What is Bootstrap, HTML, and CSS?", "What is jQuery, JavaScript, and Bootstrap?", "What is HTML, JavaScript, and CSS?", "What is HTML, CSS, and Chinese?"], ["What are Block Elements?", "What are Input Elements?", "What are Output Elements?", "What are Looping Elements?"], ["What is a console?", "What is a string?", "What is a variable?", "What is an integer?"], ["Add, Push, Commit", "Add, Commit, Push", "Commit, Add, Push", "Push, Commit, Add"], ["All of it", "None of it.", "Meeting new people", "The interactive instructors."]]
 
-var Coding1 = ["What is Bootstrap, HTML, and CSS?", "What is jQuery, JavaScript, and Bootstrap?", "What is HTML, JavaScript, and CSS?", "What is HTML, CSS, and Chinese?"]
-var Coding2 = ["What are Block Elements?", "What are Input Elements?", "What are Output Elements?", "What are Looping Elements?"]
-var Coding3 = ["What is a console?", "What is a string?", "What is a variable?", "What is an integer?"]
-var Coding4 = ["Add, Push, Commit", "Add, Commit, Push", "Commit, Add, Push", "Push, Commit, Add"]
-var Coding5 = ["All of it", "None of it.", "Meeting new people", "The interactive instructors."]
+var answers = []
+var question = ""
+var a1 = ""
+var a2 = ""
+var a3 = ""
+var a4 = ""
+$(".btn-block").on("click", function () {
+      var button = this.id;
+      var number = parseInt(button[0])
+      if (button[4] == "a") {
+         question = animalsQ[number - 1]
+         answers = AnimalsAnswers[number - 1]
+         a1 = answers[0]
+         a2 = answers[1]
+         a3 = answers[2]
+         a4 = answers[3]
+      }
+      if (button[4] == "s") {
+         question = sportsQ[number - 1]
+         answers = SportsAnswers[number - 1]
+         a1 = answers[0]
+         a2 = answers[1]
+         a3 = answers[2]
+         a4 = answers[3]
+      }
+      if (button[4] == "h") {
+         question = historyQ[number - 1]
+         answers = HistoryAnswers[number - 1]
+         a1 = answers[0]
+         a2 = answers[1]
+         a3 = answers[2]
+         a4 = answers[3]
+      }
+      if (button[4] == "m") {
+         question = musicQ[number - 1]
+         answers = MusicAnswers[number - 1]
+         a1 = answers[0]
+         a2 = answers[1]
+         a3 = answers[2]
+         a4 = answers[3]
+      }
+      if (button[4] == "c") {
+         question = uPennCodingQ[number - 1]
+         answers = CodingAnswers[number - 1]
+         a1 = answers[0]
+         a2 = answers[1]
+         a3 = answers[2]
+         a4 = answers[3]
+      }
+
+document.getElementById("question").innerHTML = question;
+document.getElementById("answer1").innerHTML = a1;
+document.getElementById("answer2").innerHTML = a2;
+document.getElementById("answer3").innerHTML = a3;
+document.getElementById("answer4").innerHTML = a4;
+}); //on function
+
+}); //ready function
 
 var turnCounter = 0;
 //Sport Buttons
