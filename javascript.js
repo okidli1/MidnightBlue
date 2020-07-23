@@ -7,11 +7,7 @@ var uPennCodingQ = ["The three “languages” used to create websites", "Elemen
 
 var SportsAnswers = [["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"], ["What is 11?", "What is 50?", "What is one?", "What is 30?"], ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"], ["What is 279?", "What is 436?", "What is 327?", "What is 339?"], ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]]
 
-<<<<<<< HEAD
 var AnimalsAnswers = [["What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"], ["What is its abdomen?", "What is its cephalothorax?", "What is its head?", "What is its antenna?"], ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"], ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"], ["What is 100%?", "What is nearly 2%?", "What is nearly 6%?", "What is nearly 3%?"]]
-=======
-var AnimalsAnswers = [["What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"], ["What is its abdomen?", "What is its cephalothorax?", "What is its head?", "What is its antenna?"], ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"], ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"], ["What is 100%?", "What is nearly 2%?", "What is nearly 6%?", "What is nearly three percent?"]]
->>>>>>> 6062c9279c7255321eb585fa7ccdf705988bf25a
 
 var HistoryAnswers = [["What is influenza?", "What is COVID-19?", "What is HIV/AIDS?", "What is the flu?"], ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"], ["What are weapons of war?", "What are boy bands?", "What are prisoners of war?", "What are soldiers?"], ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"], ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]]
 
@@ -74,6 +70,7 @@ document.getElementById("answer1").innerHTML = a1;
 document.getElementById("answer2").innerHTML = a2;
 document.getElementById("answer3").innerHTML = a3;
 document.getElementById("answer4").innerHTML = a4;
+this.innerHTML = "";
 }); //on function
 
 }); //ready function
@@ -85,29 +82,36 @@ var player2Score = 0;
 $(document).ready(function(){
    $(".btnAnswer").on("click",function() {
       var correct = ["What is NASCAR?", "What is 11?", "What is 7 pitches?", "What is 339?", "What is Bubble Yum?", "What is the peregrine falcon?", "What is its head?", "What is hair?", "What is leukocytes?", "What is nearly 3%?", "What is COVID-19?", "Who is Marie Antoinette?",  "What are prisoners of war?", "Who is Charlemagne?", "What is Manassas?", "What is the piano?", "Who are the Jonas Brothers?", "Who is John Legend?", "Who is Lizzo?",  "What is Florida Georgia Line?",   "What is HTML, JavaScript, and CSS?", "What are Block Elements?", "What is a variable?", "Add, Commit, Push", "All of it"]
+      var correctGuess = false;
       for(var i = 0; i < correct.length; i++){
-         if(this.textContent == answers[i]){
+         if(this.textContent == correct[i]){
             if(turnCounter % 2 == 0){
                player1Score += Number(document.getElementById("ModalLabel").textContent);
                $(".p1Score").text(player1Score);
-               turnCounter++;
+              
             }
             else{
                player2Score += Number(document.getElementById("ModalLabel").textContent);
                $(".p2Score").text(player2Score);
-               turnCounter++;
+              
             }
+            correctGuess = true;
+            break;
+         }
+      }
+      if(!correctGuess){
+         if(turnCounter % 2 == 0){
+            player1Score -= Number(document.getElementById("ModalLabel").textContent);
+            $(".p1Score").text(player1Score);
+           
          }
          else{
-            if(turnCounter % 2 == 0){
-               player1Score -= Number(document.getElementById("ModalLabel").textContent);
-               $(".p1Score").text(player1Score);
-            }
-            else{
-               player2Score -= Number(document.getElementById("ModalLabel").textContent);
-               $(".p2Score").text(player2Score);
-            }
-         }
+            player2Score -= Number(document.getElementById("ModalLabel").textContent);
+            $(".p2Score").text(player2Score);
+            
+      }
+      turnCounter++;
+
    }
    });
 });
