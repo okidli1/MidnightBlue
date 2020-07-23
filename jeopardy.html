@@ -45,7 +45,9 @@
         <!-- End Nav -->
         <div class="row">
             <div class="col-1">
-                <p>Player 1 Score: </p> 
+                <p>Player 1 Score:
+                     <div class="p1Score"></div>
+                </p> 
             </div>
             <div class="col-2" style="color:white; border: solid white 3px; height: 165px; text-align: center; background-color: midnightblue; font-size: x-large; padding-top: 58px;">
                 Animals
@@ -56,18 +58,24 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel" style ="color:black;">Modal title</h5>
+
+                                <h5 class="modal-title" id="ModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
                             </div>
                             <div class="modal-body" id="question" style="color: black;">
                                 ...
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="answer1">Answer
+                                <button type="button" class="btn btn-primary btnAnswer" data-dismiss="modal" id="answer1">Answer
                                     1</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="answer2">Answer
+                                <button type="button" class="btn btn-primary btnAnswer" data-dismiss="modal" id="answer2">Answer
                                     2</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="answer3">Answer
+                                <button type="button" class="btn btn-primary btnAnswer" data-dismiss="modal" id="answer3">Answer
                                     3</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="answer4">Answer
+                                <button type="button" class="btn btn-primary btnAnswer" data-dismiss="modal" id="answer4">Answer
                                     4</button>
                             </div>
                         </div>
@@ -89,7 +97,9 @@
                 UPenn Coding Camp
             </div>
             <div class="col-1">
-
+                <p>Player 2 Score:
+                    <div class="p2Score"></div>
+               </p> 
             </div>
         </div>
         <div class="row">

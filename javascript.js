@@ -5,17 +5,17 @@ var historyQ = ["On March 11, 2020, this was declared a pandemic.", "A French Qu
 var musicQ = ["The main instrument of Alicia Keys.", "In 2019, this trio of siblings had its first No. 1 song with “Sucker”", "In 2018, this R&B singer lived up to his (stage) name, becoming an EGOT, the first African American man to do so.", "In 2019, this 5-letter rap & R&B artist had the “Juice” to be nominated for Best New Artist at VMAs.", "Their adjacent home states gave country singers Brian Kelly & Tyler Hubbard this name for their country duo."]
 var uPennCodingQ = ["The three “languages” used to create websites", "Elements used as containers for inline elements", " A named location for a value that gets stored in the browser’s memory when a program is run", "Order of GitHub commands", "Best camp part."]
 
-var SportsAnswers = [["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"], ["What is eleven?", "What is 50?", "What is one?", "What is 30?"], ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"], ["What is 279?", "What is 436?", "What is 327?", "What is 339?"], ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]]
+var SportsAnswers = [["What is Sports Car Club of America", "What is the National Auto Sport Association?", "What is NASCAR?", "What is Formula 1?"], ["What is 11?", "What is 50?", "What is one?", "What is 30?"], ["What is 10 pitches?", "What is 7 pitches?", "What is 100 pitches?", "What is 3 pitches?"], ["What is 279?", "What is 436?", "What is 327?", "What is 339?"], ["What is Bazooka?", "What is Juicy Fruit?", "What is Dubble Bubble?", "What is Bubble Yum?"]]
 
 var AnimalsAnswers = [["What is the peregrine falcon?", "What is the bald eagle?", "What is the Golden eagle?", "What is the Ostrich?"], ["What is its abdomen?", "What is its cephalothorax?", "What is its head?", "What is its antenna?"], ["What is bone?", "What is hair?", "What is ivory?", "What is stone?"], ["What are leukocytes?", "What are platelets?", "What are thrombocytes?", "What are lymphocytes?"], ["What is 100%?", "What is nearly 2%?", "What is nearly 6%?", "What is nearly three percent?"]]
 
-var HistoryAnswers = [["What is influenza?", "What is COVID-19?", "What is HIV/AIDS", "What is the flu?"], ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"], ["What are weapons of war?", "HWhat are boy bands?", "What are prisoners of war?", "What are soldiers?"], ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"], ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]]
+var HistoryAnswers = [["What is influenza?", "What is COVID-19?", "What is HIV/AIDS?", "What is the flu?"], ["Who is Eleanor of Aquitaine?", "Who is Anne of Austria?", "Who is Mary Queen of Scots?", "Who is Marie Antoinette?"], ["What are weapons of war?", "What are boy bands?", "What are prisoners of war?", "What are soldiers?"], ["Who is Charlemagne?", "Who is Napoleon?", "Who is Carloman I?", "Who is Louis the Pious?"], ["What is Prince William County?", "What is Salam?", "What is Concord?", "What is Manassas?"]]
 
 var MusicAnswers = [["What is the tambourine?", "What is the guitar?", "What is the piano?", "What are the drums?"], ["What are the Beatles?", "What are the Doobie Brothers?", "What is NSYNC?", "Who are the Jonas Brothers?"], ["Who is Marvin Gaye?", "Who is John Legend?", "Who is Stevie Wonder?", "Who is Smokey Robinson"], ["Who is Lizzo?", "Who is Akala?", "Who is Yubin?", "Who is Kelis?"], ["What is Florida Arizona Line?", "What is Florida Georgia Line?", " What is Texas Louisiana Line?", "What is Maine California Line?"]]
 
 var CodingAnswers = [["What is Bootstrap, HTML, and CSS?", "What is jQuery, JavaScript, and Bootstrap?", "What is HTML, JavaScript, and CSS?", "What is HTML, CSS, and Chinese?"], ["What are Block Elements?", "What are Input Elements?", "What are Output Elements?", "What are Looping Elements?"], ["What is a console?", "What is a string?", "What is a variable?", "What is an integer?"], ["Add, Push, Commit", "Add, Commit, Push", "Commit, Add, Push", "Push, Commit, Add"], ["All of it", "None of it.", "Meeting new people", "The interactive instructors."]]
 
-var answers = []
+
 var question = ""
 var a1 = ""
 var a2 = ""
@@ -64,7 +64,7 @@ $(".btn-block").on("click", function () {
          a3 = answers[2]
          a4 = answers[3]
       }
-
+document.getElementById("ModalLabel").innerHTML = (number * 100).toString();
 document.getElementById("question").innerHTML = question;
 document.getElementById("answer1").innerHTML = a1;
 document.getElementById("answer2").innerHTML = a2;
@@ -75,517 +75,40 @@ document.getElementById("answer4").innerHTML = a4;
 }); //ready function
 
 var turnCounter = 0;
-//Sport Buttons
+var player1Score = 0;
+var player2Score = 0;
 
 $(document).ready(function(){
-    $(".btn-choiceSport1").on("click",function() {
-    if($(this).val()== 3){
-       if(turnCounter % 2 == 0){
-         player1Score +=100;
-       }
-      else{
-         player2Score +=100
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=100;
-       }
-       else{
-          player2Score -=100;
-       }
-       }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceSport2").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=200;
-       }
-      else{
-         player2Score +=200
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=200;
-       }
-       else{
-          player2Score -=200;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceSport3").on("click",function() {
-    if($(this).val()== 2){
-      if(turnCounter % 2 == 0){
-         player1Score +=300;
-       }
-      else{
-         player2Score +=300
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=300;
-       }
-       else{
-          player2Score -=300;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceSport4").on("click",function() {
-    if($(this).val()== 4){
-      if(turnCounter % 2 == 0){
-         player1Score +=400;
-       }
-      else{
-         player2Score +=400
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=400;
-       }
-       else{
-          player2Score -=400;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceSport5").on("click",function() {
-    if($(this).val()== 4){
-      if(turnCounter % 2 == 0){
-         player1Score +=500;
-       }
-      else{
-         player2Score +=500
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=500;
-       }
-       else{
-          player2Score -=500;
-       }
-      }
-    });   
-   });
-
-//Animal Buttons
-
-$(document).ready(function(){
- $(".btn-choiceAnimal1").on("click",function() {
- if($(this).val()== 1){
-   if(turnCounter % 2 == 0){
-      player1Score +=100;
-    }
-   else{
-      player2Score +=100
-   }    
- }
- else{
-    if(turnCounter % 2 == 0){
-     player1score -=100;
-    }
-    else{
-       player2Score -=100;
-    }
+   $(".btnAnswer").on("click",function() {
+      var correct = ["What is NASCAR?", "What is 11?", "What is 7 pitches?", "What is 339?", "What is Bubble Yum?", "What is the peregrine falcon?", "What is its head?", "What is hair?", "What is leukocytes?", "What is nearly 3%?", "What is COVID-19?", "Who is Marie Antoinette?",  "What are prisoners of war?", "Who is Charlemagne?", "What is Manassas?", "What is the piano?", "Who are the Jonas Brothers?", "Who is John Legend?", "Who is Lizzo?",  "What is Florida Georgia Line?",   "What is HTML, JavaScript, and CSS?", "What are Block Elements?", "What is a variable?", "Add, Commit, Push", "All of it"]
+      for(var i = 0; i < correct.length; i++){
+         if(this.textContent == answers[i]){
+            if(turnCounter % 2 == 0){
+               player1Score += Number(document.getElementById("ModalLabel").textContent);
+               $(".p1Score").text(player1Score);
+               turnCounter++;
+            }
+            else{
+               player2Score += Number(document.getElementById("ModalLabel").textContent);
+               $(".p2Score").text(player2Score);
+               turnCounter++;
+            }
+         }
+         else{
+            if(turnCounter % 2 == 0){
+               player1Score -= Number(document.getElementById("ModalLabel").textContent);
+               $(".p1Score").text(player1Score);
+            }
+            else{
+               player2Score -= Number(document.getElementById("ModalLabel").textContent);
+               $(".p2Score").text(player2Score);
+            }
+         }
    }
- });   
+   });
 });
 
-$(document).ready(function(){
-    $(".btn-choiceAnimal2").on("click",function() {
-    if($(this).val()== 3){
-      if(turnCounter % 2 == 0){
-         player1Score +=200;
-       }
-      else{
-         player2Score +=200
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=200;
-       }
-       else{
-          player2Score -=200;
-       }
-      }
-    });   
-   });
 
-   $(document).ready(function(){
-    $(".btn-choiceAnimal3").on("click",function() {
-    if($(this).val()== 2){
-      if(turnCounter % 2 == 0){
-         player1Score +=300;
-       }
-      else{
-         player2Score +=300
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=300;
-       }
-       else{
-          player2Score -=300;
-       }
-      }
-    });   
-   });
 
-   $(document).ready(function(){
-    $(".btn-choiceAnimal4").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=400;
-       }
-      else{
-         player2Score +=400
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=400;
-       }
-       else{
-          player2Score -=400;
-       }
-      }
-    });   
-   });
 
-   $(document).ready(function(){
-    $(".btn-choiceAnimal5").on("click",function() {
-    if($(this).val()== 4){
-      if(turnCounter % 2 == 0){
-         player1Score +=500;
-       }
-      else{
-         player2Score +=500
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=500;
-       }
-       else{
-          player2Score -=500;
-       }
-      }
-    });   
-   });
-
-   //History Buttons
-
-   $(document).ready(function(){
-    $(".btn-choiceHistory1").on("click",function() {
-    if($(this).val()== 2){
-       playerScore +=100;    
-    }
-    else{
-        playerscore -=100;
-       }
-    });   
-   });
-   $(document).ready(function(){
-    $(".btn-choiceHistory2").on("click",function() {
-    if($(this).val()== 4){
-       playerScore +=200;    
-    }
-    else{
-        playerscore -=200;
-       }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceHistory3").on("click",function() {
-    if($(this).val()== 3){
-      if(turnCounter % 2 == 0){
-         player1Score +=300;
-       }
-      else{
-         player2Score +=300
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=300;
-       }
-       else{
-          player2Score -=300;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceHistory4").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=400;
-       }
-      else{
-         player2Score +=400
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=400;
-       }
-       else{
-          player2Score -=400;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceHistory5").on("click",function() {
-    if($(this).val()== 4){
-      if(turnCounter % 2 == 0){
-         player1Score +=500;
-       }
-      else{
-         player2Score +=500
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=500;
-       }
-       else{
-          player2Score -=500;
-       }
-      }
-    });   
-   });
-
-   //Music Buttons
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic1").on("click",function() {
-    if($(this).val()== 3){
-      if(turnCounter % 2 == 0){
-         player1Score +=100;
-       }
-      else{
-         player2Score +=100
-      }    
-
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=100;
-       }
-       else{
-          player2Score -=100;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic2").on("click",function() {
-    if($(this).val()== 4){
-      if(turnCounter % 2 == 0){
-         player1Score +=200;
-       }
-      else{
-         player2Score +=200
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=200;
-       }
-       else{
-          player2Score -=200;
-       }
-      }
-    });   
-   }); 
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic3").on("click",function() {
-    if($(this).val()== 2){
-      if(turnCounter % 2 == 0){
-         player1Score +=300;
-       }
-      else{
-         player2Score +=300
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=300;
-       }
-       else{
-          player2Score -=300;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic4").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=400;
-       }
-      else{
-         player2Score +=400
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=400;
-       }
-       else{
-          player2Score -=400;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic5").on("click",function() {
-    if($(this).val()== 2){
-      if(turnCounter % 2 == 0){
-         player1Score +=500;
-       }
-      else{
-         player2Score +=500
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=500;
-       }
-       else{
-          player2Score -=500;
-       }
-      }
-    });   
-   });
-   
-   //Coding Buttons
-   $(document).ready(function(){
-    $(".btn-choiceCoding1").on("click",function() {
-    if($(this).val()== 3){
-      if(turnCounter % 2 == 0){
-         player1Score +=100;
-       }
-      else{
-         player2Score +=100
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=100;
-       }
-       else{
-          player2Score -=100;
-       }
-      }
-    });   
-   }); 
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic2").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=200;
-       }
-      else{
-         player2Score +=200
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=200;
-       }
-       else{
-          player2Score -=200;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic3").on("click",function() {
-    if($(this).val()== 3){
-      if(turnCounter % 2 == 0){
-         player1Score +=300;
-       }
-      else{
-         player2Score +=300
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=300;
-       }
-       else{
-          player2Score -=300;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic4").on("click",function() {
-    if($(this).val()== 2){
-      if(turnCounter % 2 == 0){
-         player1Score +=400;
-       }
-      else{
-         player2Score +=400
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=400;
-       }
-       else{
-          player2Score -=400;
-       }
-      }
-    });   
-   });
-
-   $(document).ready(function(){
-    $(".btn-choiceMusic5").on("click",function() {
-    if($(this).val()== 1){
-      if(turnCounter % 2 == 0){
-         player1Score +=500;
-       }
-      else{
-         player2Score +=500
-      }    
-    }
-    else{
-       if(turnCounter % 2 == 0){
-        player1score -=500;
-       }
-       else{
-          player2Score -=500;
-       }
-      }
-    });   
-   });
-
+    
