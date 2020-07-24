@@ -1,3 +1,4 @@
+var turnCounter = 0;
 $(document).ready(function () {
 var sportsQ = ["Florida’s Streamline Hotel is the birthplace of this auto racing organization.", "The maximum number of players on a soccer team.", "The average lifespan of a baseball.", "The number of events in the 2020 Summer Olympics.", "Coach Pete Carroll’s gum of choice"]
 var animalsQ = ["Reaching speeds of 200 miles per hour, this bird of prey is not only the world’s fastest, it is also the world’s fastest animal", "The heart of a shrimp is located here.", "The material a rhinoceros’ horn is made of", " Erythrocytes are your red blood cells & these are your white blood cells.", "The percentage of ice in Antarctic glaciers is made of penguin urine."]
@@ -21,7 +22,7 @@ var a1 = ""
 var a2 = ""
 var a3 = ""
 var a4 = ""
-var buttons = document.getElementsByClassName("btn btn-primary btn-lg btn-block");
+var buttons = document.getElementsByClassName("btn-block");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", setTimerFunction, false);
         }
@@ -33,6 +34,8 @@ var buttons = document.getElementsByClassName("btn btn-primary btn-lg btn-block"
             if (modal.hasClass("show")) {
                 modal.removeClass("show");
                 alert("Time has run out!");
+                turnCounter++
+                return turnCounter
             }
 
         }
@@ -89,8 +92,6 @@ this.innerHTML = "";
 }); //on function
 
 }); //ready function
-
-var turnCounter = 0;
 var player1Score = 0;
 var player2Score = 0;
 
