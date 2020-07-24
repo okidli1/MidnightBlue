@@ -23,11 +23,15 @@ var a2 = ""
 var a3 = ""
 var a4 = ""
 var buttons = document.getElementsByClassName("btn-block");
+var buttonAnswers = document.getElementsByClassName("btn btn-primary btnAnswer")
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", setTimerFunction, false);
         }
+        function myStopFunction() {
+           clearTimeout(timer);
+        }
         function setTimerFunction(){
-            var timer = setTimeout(buzzer, 2500);
+            var timer = setTimeout(buzzer, 10000);
         };
         function buzzer() {
             var modal = $("#exampleModal");
@@ -36,7 +40,6 @@ var buttons = document.getElementsByClassName("btn-block");
                 alert("Time has run out!");
                 turnCounter++
             }
-
         }
 $(".btn-block").on("click", function () {
       var button = this.id;
