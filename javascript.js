@@ -27,7 +27,7 @@ var buttons = document.getElementsByClassName("btn-block");
             buttons[i].addEventListener("click", setTimerFunction, false);
         }
         function setTimerFunction(){
-            var timer = setTimeout(buzzer, 15000);
+            var timer = setTimeout(buzzer, 2500);
         };
         function buzzer() {
             var modal = $("#exampleModal");
@@ -35,7 +35,6 @@ var buttons = document.getElementsByClassName("btn-block");
                 modal.removeClass("show");
                 alert("Time has run out!");
                 turnCounter++
-                return turnCounter
             }
 
         }
