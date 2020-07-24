@@ -27,9 +27,7 @@ var buttonAnswers = document.getElementsByClassName("btn btn-primary btnAnswer")
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", setTimerFunction, false);
         }
-        function myStopFunction() {
-           clearTimeout(timer);
-        }
+        
         function setTimerFunction(){
             var timer = setTimeout(buzzer, 10000);
         };
@@ -40,6 +38,9 @@ var buttonAnswers = document.getElementsByClassName("btn btn-primary btnAnswer")
                 alert("Time has run out!");
                 turnCounter++
             }
+        }
+         function myStopFunction() {
+           clearTimeout(timer);
         }
 $(".btn-block").on("click", function () {
       var button = this.id;
